@@ -1,0 +1,55 @@
+Documentation for FrozenLake-v1 exploration
+
+What happened when I ran my code:
+
+(VENVFrozenLake) PS C:\Users\Kikke\Desktop\ReinforcementLearning\FrozenLake-v1> python ExploreFrozenLake-v1.py
+Observation space: Discrete(16)
+Action space: Discrete(4)
+Step 1: Obs=0, Reward=0.0, Done=False, Truncated=False
+Step 2: Obs=0, Reward=0.0, Done=False, Truncated=False
+Step 3: Obs=4, Reward=0.0, Done=False, Truncated=False
+Step 4: Obs=4, Reward=0.0, Done=False, Truncated=False
+Step 5: Obs=8, Reward=0.0, Done=False, Truncated=False
+Observation space:  Discrete(16)
+Action space:  Discrete(4)
+Step 1: Obs=0, Reward=0.0, Done=False, Truncated=False
+Step 2: Obs=0, Reward=0.0, Done=False, Truncated=False
+Step 3: Obs=4, Reward=0.0, Done=False, Truncated=False
+Step 4: Obs=0, Reward=0.0, Done=False, Truncated=False
+Step 5: Obs=4, Reward=0.0, Done=False, Truncated=False
+
+Analysis:
+
+Observation Space = Discrete(16)
+    - This means the Environment has 16 separate blocks,
+    where the agent can be/go in/to.
+Action Space = Discrete(4)
+    - This means our agent has 4 different possible action:
+        - 0 = left
+        - 1 = down
+        - 2 = right
+        - 3 = up
+
+The agent "sees" the following:
+    - observes the state that is a number between 0-15.
+    - This number will tell where the agent is in the block grid.
+    - Agent can not see the whole block grid at a time, only the current one.
+
+The agent "does" the following:
+    - Chooses randomly one out 4 different actions (env.action_space.sample()).
+    - After that the environment will update the agent to next state.
+    - If agent hits a H = hole, episode ends Done = True.
+    - If agent reaches the goal (G), it will get a reward of 1.0, and episode ends.
+
+Rewards:
+    - Usually the reward is 0.0, because FrozenLake only gives points if agent reaches the goal.
+    - If agent reaches the "G" (Goal), reward is 1.0
+    - If agent falls into a "H" (Hole), reward stays as 0.0, but episode ends.
+    - This means that the agent does not know immediately what path is the best,
+    but it needs to learn the best path through trial and error.
+
+Conclusion:
+This demonstrated how the environment works in Gymnasium and
+provides a foundation for further RL learning and exploring.
+Agent is acting randomly in current exploration and learning
+algorithms like Q-learning are needed to optimize the movement.
