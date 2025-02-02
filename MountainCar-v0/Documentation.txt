@@ -1,0 +1,41 @@
+Print out of the main.py file:
+
+(.venv) PS C:\Users\Kikke\Desktop\ReinforcementLearning\MountainCar-v0> python main.py
+Observation space:  Box([-1.2  -0.07], [0.6  0.07], (2,), float32)
+Action space:  Discrete(3)
+Step 1: Obs=[-0.4616337  -0.00147292], Reward=-1.0, Done=False, Truncated=False
+Step 2: Obs=[-0.4635687  -0.00193498], Reward=-1.0, Done=False, Truncated=False
+Step 3: Obs=[-0.46495146 -0.00138278], Reward=-1.0, Done=False, Truncated=False
+Step 4: Obs=[-0.46777183 -0.00282037], Reward=-1.0, Done=False, Truncated=False
+Step 5: Obs=[-0.47200894 -0.00423712], Reward=-1.0, Done=False, Truncated=False
+
+Observation Space = what the agent "sees"
+    - Type: Box() = observations are continuous values.
+    - Shape: (2, ) = each observation consists of two values:
+        - Car's position (between -1.2 & 0.6)
+        - Car's velocity (between -0.07 and 0.07)
+
+    The agent only sees its current position and velocity, it does not "see" the whole hill.
+
+Action Space = what the agent can "do"
+    - 3 possible actions:
+        - 0 = Push left
+        - 1 = Do nothing
+        - 2 = Push right
+    The goal is to use momentum to push car up the hill and reach the goal flag.
+
+Rewards = how the environment rewards the agent
+    - Reward seems to always be -1.0 for each step, until the agent reaches the goal.
+    - The agent is punished for taking too long time, since
+    the negative rewards.
+    - If the car reaches the goal position 0.5, the episode ends, and the agent stops
+    receiving rewards.
+
+    The optimal strategy seems to be to swing back and forth to gain momentum and
+    reach the goal more quickly.
+
+- Position (Obs[0]) is decreasing, meaning the car is moving left.
+- Velocity (Obs[0]) is slightly negative, meaning the car is slowing while moving left.
+- Reward stays at -1.0, meaning the agent hasn't reached the goal yet.
+
+Since the actions are still random, the agent isn't learning yet, just moving randomly.
