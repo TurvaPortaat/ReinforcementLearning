@@ -1,0 +1,18 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Ignore Python virtual environment
+VENV_MountainCar/
+venv/
+.env/
+.venv/
+
+# Ignore site-packages inside a virtual environment
+VENV_MountainCar/Lib/site-packages/
+VENV_MountainCar/lib/site-packages/
+VENV_MountainCar/bin/
+VENV_MountainCar/include/
+
+# Ignore macOS, Windows, and Linux-specific files (optional)
+.DS_Store
+Thumbs.db
