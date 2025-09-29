@@ -1,0 +1,26 @@
+﻿# JetBrains / PyCharm
+.idea/
+*.iml
+
+# Python venv
+.venv/
+venv/
+
+# Python cache & build
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+
+# Data & models (pidä pilvessä, ei gitiin)
+data/
+datasets/
+models/
+checkpoints/
+
+# OS junk
+.DS_Store
+Thumbs.db
