@@ -1,0 +1,35 @@
+Final Project
+
+I will be using Gymnasium as my environment in this project.
+The reinforcement learning algorithm applied is  Deep Q-learning,
+because the environment is on continuum, and Q-learning doesn't
+scale well with this size of an environment.
+
+https://gymnasium.farama.org/introduction/record_agent/
+
+First phase of the training process
+
+I'll start wit predicting and printing Q-values for all
+4 functions.
+
+PS C:\Path\> .venv\Scripts\activate
+(.venv) PS C:\Path\> pip install gymnasium torch numpy matplotlib
+(.venv) PS C:\Path\> pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+(.venv) PS C:\Path\> pip install swig
+(.venv) PS C:\Path\> pip install "gymnasium[box2d]"
+
+Second phase of the training process
+Now I shall save the experiences and use them randomly
+to teach the agent.
+
+
+Third phase of the training process
+Epsilon-Greedy Exploration
+
+(Include graphs and insights with matplotlib pyplot)
+
+The Results
+
+I faced the following challenges:
+
+Potential improvements:

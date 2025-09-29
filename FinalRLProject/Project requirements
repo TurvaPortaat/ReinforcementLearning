@@ -1,0 +1,45 @@
+
+Hi all,
+
+Now that we have covered Q-Learning and Deep Q-Learning,
+it's time for you to apply what you've learned by developing your own RL project.
+
+This project will count for 20% of your final grade.
+
+📌 Project Requirements
+
+You will design and implement an RL pipeline of your choice.
+The focus is on understanding the RL process, so a perfect model is not required.
+Your project must include:
+A well-defined environment (custom or from Gymnasium).
+A functioning agent (Q-learning or Deep Q-Learning).
+A clear training process (even if the model is not perfectly optimized).
+A brief evaluation and reflection on what worked and what didn’t.
+
+🎤 Presentations & Submission
+
+PRESENT YOUR IDEA
+[LunarLander
+Object:  Use RL to land the spaceship safely.]
+and
+YOUR PROGRESS THIS FAR
+[Check the report draft.]
+Each student will present their project in a 10-minute session
+(7 minutes for the presentation + 3 minutes for Q&A).
+You can choose your own time slot before the final session on March 27.
+Presentations will take place during class time.
+Submission: Upload your code and report to the Final RL Project Submission assignment
+in Moodle before your presentation.
+
+📆 Timeline
+
+
+Project selection & initial implementation: I believe you've already started
+since we've discussed it several times during the class!
+Choose your presentation date: Book your slot in this forum.
+Project presentations: Any time up to and including March 27.
+
+✔️ How to Book a Presentation Slot
+
+Reply to this post with your preferred presentation date and time.
+If someone has already chosen your desired time, pick another available slot.
