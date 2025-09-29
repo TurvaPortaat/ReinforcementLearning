@@ -6,7 +6,7 @@
 .venv/
 venv/
 
-# Python cache & build
+# Python cache
 __pycache__/
 *.py[cod]
 .ipynb_checkpoints/
@@ -15,12 +15,19 @@ __pycache__/
 dist/
 build/
 
-# Data & models (pidä pilvessä, ei gitiin)
+# Swig / paketit / generoidut
+swig/
+swigwin-*/
+*.m4
+*.yml
+
+# Data / mallit
 data/
 datasets/
 models/
 checkpoints/
 
-# OS junk
+# OS
 .DS_Store
 Thumbs.db
+
